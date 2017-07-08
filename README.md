@@ -1,0 +1,2 @@
+# OpenCVfun
+Fun with OpenCV!
