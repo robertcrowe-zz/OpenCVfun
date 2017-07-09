@@ -12,7 +12,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cv2.imshow('Identifying Shapes', image)
 cv2.waitKey(0)
 
-ret, thresh = cv2.threshold(gray, 127, 255, 1) # threshold to improve contrast
+ret, thresh = cv2.threshold(gray, 127, 255, 1) # threshold to improve contrast for contouring
 
 # Extract Contours
 _, contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
